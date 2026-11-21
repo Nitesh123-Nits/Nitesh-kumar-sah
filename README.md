@@ -5,7 +5,7 @@ Personal portfolio site: a single static page (`index.html`) with no build step 
 **Live:** https://nitesh123-nits.github.io/Nitesh-kumar-sah/
 
 ## Features
-- Aurora-style glass design: animated gradient backdrop, typed role line, count-up stats, scroll reveals and card spotlight
+- Flat solid-colour design: typed role line, count-up stats, scroll reveals and card spotlight
 - Skills shown with technology logos ([Devicon](https://devicon.dev), MIT) stored locally in `assets/icons/`
 - Dark theme by default with a light toggle that remembers the choice
 - Responsive down to small phones
