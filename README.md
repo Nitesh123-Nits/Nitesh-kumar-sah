@@ -5,7 +5,9 @@ Personal portfolio site: a single static page (`index.html`) with no build step 
 **Live:** https://nitesh123-nits.github.io/Nitesh-kumar-sah/
 
 ## Features
-- Flat, minimal design with a light/dark toggle (follows the system setting by default, remembers the choice)
+- Aurora-style glass design: animated gradient backdrop, typed role line, count-up stats, scroll reveals and card spotlight
+- Skills shown with technology logos ([Devicon](https://devicon.dev), MIT) stored locally in `assets/icons/`
+- Dark theme by default with a light toggle that remembers the choice
 - Responsive down to small phones
 - SEO basics: title, description, Open Graph tags and `schema.org` Person JSON-LD
 
@@ -19,4 +21,4 @@ python3 -m http.server 8000
 Push to `main`, then enable **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**. The site is served at `https://nitesh123-nits.github.io/Nitesh-kumar-sah/`.
 
 ## Updating content
-Everything lives in `index.html`: experience in `#experience`, projects in `#projects`, skills in `#skills`.
+Everything lives in `index.html`: experience in `#experience`, projects in `#projects`, skills in `#skills`. New logos: copy an SVG from the `devicon` npm package into `assets/icons/`.
