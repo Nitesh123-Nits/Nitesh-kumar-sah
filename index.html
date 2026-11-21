@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nitesh Kumar Sah · Backend Engineer (Java, Spring Boot, Distributed Systems)</title>
-<meta name="description" content="Backend engineer with 3+ years building Java and Spring Boot microservices, Kafka event-driven pipelines and Kubernetes platforms. SDE at Aditya Birla Capital, formerly Jio Platforms.">
+<meta name="description" content="Backend engineer with 3+ years in distributed systems and event-driven architecture: Java and Spring Boot microservices on Kafka, Redis and Kubernetes for fintech and telecom platforms. SDE at Aditya Birla Capital, formerly Jio Platforms.">
 <meta name="author" content="Nitesh Kumar Sah">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nitesh Kumar Sah · Backend Engineer">
@@ -306,7 +306,7 @@
         <div class="status"><span class="dot"></span> Open to SDE-2 / Senior Backend roles · Pan-India or remote</div>
         <h1>Hi, I'm <span class="grad-text">Nitesh Kumar Sah</span></h1>
         <p class="role"><span id="typed"></span><span class="caret"></span></p>
-        <p class="lead">Backend engineer building resilient <b>Java and Spring Boot</b> microservices, <b>Kafka</b> event-driven pipelines and <b>Kubernetes</b> platforms. 3+ years of production experience in fintech and telecom-scale systems.</p>
+        <p class="lead">Backend engineer with 3+ years in distributed systems, event-driven architecture and platform engineering. I build <b>Java and Spring Boot</b> microservices on <b>Kafka</b>, <b>Redis</b> and <b>Kubernetes</b> for high-volume fintech and telecom platforms, with hands-on observability, production issue resolution and <b>Spring AI / RAG</b> work.</p>
         <div class="btns">
           <a class="btn primary" href="https://linkedin.com/in/nitesh--kumar--sah" target="_blank" rel="noopener">Connect on LinkedIn <svg class="g"><use href="#i-arrow"/></svg></a>
           <a class="btn" href="https://github.com/Nitesh123-Nits" target="_blank" rel="noopener">GitHub</a>
@@ -321,7 +321,7 @@
   .<span class="f">role</span>(<span class="s">"Backend SDE"</span>)
   .<span class="f">company</span>(<span class="s">"Aditya Birla Capital"</span>)
   .<span class="f">stack</span>(<span class="s">"Java 17"</span>, <span class="s">"Spring Boot"</span>,
-         <span class="s">"Kafka"</span>, <span class="s">"Kubernetes"</span>)
+         <span class="s">"Kafka"</span>, <span class="s">"Redis"</span>, <span class="s">"Kubernetes"</span>)
   .<span class="f">basedIn</span>(<span class="s">"Navi Mumbai"</span>)
   .<span class="f">openTo</span>(<span class="s">"SDE-2 / Senior"</span>)
   .<span class="f">build</span>();</pre>
@@ -387,9 +387,11 @@
           <span class="when mono">Aug 2026 – Present · Navi Mumbai</span>
         </div>
         <ul>
-          <li>Re-architected <b>Fixed Deposit, DigiMetal (gold/silver) and SIP</b> API flows from sequential DB and third-party calls to <b>parallel async execution</b>, cutting latency.</li>
-          <li>Introduced <b>Redis caching</b> at critical layers to reduce DB round-trips and downstream load.</li>
-          <li>Refactored legacy code: broke up God classes, applied SOLID, moved to a clean layered architecture.</li>
+          <li>Re-architected <b>3 investment product API flows</b> (Fixed Deposit, DigiMetal gold/silver, SIP) from sequential DB and third-party calls to <b>parallel asynchronous execution</b>, cutting end-to-end latency.</li>
+          <li>Introduced <b>Redis caching</b> at critical layers to reduce database round-trips and downstream load.</li>
+          <li>Built APIs for business-driven <b>cohort-based banners</b> and <b>referral updates</b>.</li>
+          <li>Developed multiple <b>scheduler APIs</b> for lead management workflows.</li>
+          <li>Refactored legacy modules: broke up God classes, applied <b>SOLID</b> principles and a clean layered architecture.</li>
         </ul>
       </div>
 
@@ -399,12 +401,13 @@
           <span class="when mono">Oct 2023 – Aug 2026 · Navi Mumbai</span>
         </div>
         <ul>
-          <li>Built <b>Spring Boot microservices</b> for the provision / modify / delete lifecycle of enterprise VPN networking products.</li>
-          <li>Designed a <b>Kafka-based job dispatch pipeline</b> running across thousands of enterprise devices.</li>
-          <li>Built a config and automation engine generating device configs and IPs: <b>20% operational efficiency gain</b>.</li>
-          <li>Delivered a resilient provisioning service for real-time config and password updates with <b>retries and graceful failure handling</b>.</li>
-          <li>Secured services with <b>JWT + Spring Security</b>; tuned CRUD paths for a <b>75% performance improvement</b>.</li>
-          <li>Containerised services with <b>Docker + Kubernetes</b>, reaching <b>2× throughput at peak</b>.</li>
+          <li>Improved CRUD performance by <b>75%</b> and secured services with <b>JWT + Spring Security</b>.</li>
+          <li>Achieved <b>2× throughput at peak load</b> by containerising services with <b>Docker + Kubernetes</b>.</li>
+          <li>Improved operational efficiency by <b>20%</b> with a configuration and automation engine that generates device configs and IP allocations.</li>
+          <li>Designed a <b>Kafka-based job dispatch pipeline</b> distributing work across thousands of enterprise devices.</li>
+          <li>Built <b>Spring Boot microservices</b> managing the full lifecycle (provision, modify, delete) of enterprise VPN networking products.</li>
+          <li>Built a resilient provisioning service for real-time config and password updates with <b>retries and graceful failure handling</b>.</li>
+          <li>Diagnosed and resolved numerous <b>production issues</b> across backend microservices, keeping customer-facing services stable.</li>
         </ul>
       </div>
     </div>
@@ -420,7 +423,7 @@
       <div class="card flag reveal">
         <div class="badge">FLAGSHIP · DISTRIBUTED SYSTEMS</div>
         <div class="head"><span class="ico gl"><svg class="g"><use href="#i-split"/></svg></span><h3>Distributed Device Configuration Backup Scheduler</h3></div>
-        <p>Triggers daily per-device config backups through <b>Kafka consumer groups</b>, with <b>Ansible</b> fetching versioned config snapshots. A <b>distributed lock</b> ensures only one scheduler instance publishes, so no duplicate jobs. Includes retries, failure alerting and a REST API for per-device status. A personal rebuild of a production problem I worked on, with full observability.</p>
+        <p>Schedules daily per-device backup jobs with <b>Spring Scheduler</b> and distributes them through <b>Kafka consumer groups</b>, with <b>Ansible</b> fetching versioned config snapshots. A <b>distributed lock</b> ensures only one scheduler instance publishes, so no duplicate jobs. Includes retries, failure alerting and a REST API for per-device status. A personal rebuild of a production problem I worked on, with full observability.</p>
         <div class="tags"><span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Kafka</span><span class="tag">Ansible</span><span class="tag">Kubernetes</span><span class="tag">OpenTelemetry</span></div>
       </div>
 
@@ -496,18 +499,21 @@
     <h2 class="reveal">What I work with</h2>
     <div class="skills">
 
-      <div class="skill reveal"><h3><svg class="g"><use href="#i-server"/></svg>Backend</h3><div class="chips">
+      <div class="skill reveal"><h3><svg class="g"><use href="#i-server"/></svg>Languages &amp; Frameworks</h3><div class="chips">
         <span class="chip"><span class="ico"><img src="assets/icons/java.svg" alt="" width="24" height="24"></span>Java 17</span>
         <span class="chip"><span class="ico"><img src="assets/icons/spring.svg" alt="" width="24" height="24"></span>Spring Boot</span>
-        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-cloud"/></svg></span>Spring Cloud</span>
+        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-cloud"/></svg></span>Spring Cloud (Eureka, Config Server, API Gateway)</span>
         <span class="chip"><span class="ico"><img src="assets/icons/jwt.svg" alt="" width="24" height="24"></span>Spring Security + JWT</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-clock"/></svg></span>Spring Scheduler</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-globe"/></svg></span>REST</span>
+        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-chip"/></svg></span>JavaScript</span>
+        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-layers"/></svg></span>AngularJS</span>
       </div></div>
 
       <div class="skill reveal"><h3><svg class="g"><use href="#i-layers"/></svg>Architecture</h3><div class="chips">
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-box"/></svg></span>Microservices</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-zap"/></svg></span>Event-driven</span>
+        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-graph"/></svg></span>Distributed systems</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-split"/></svg></span>Async / parallel execution</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-lock"/></svg></span>Distributed locking</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-retry"/></svg></span>Retries &amp; resilience</span>
@@ -541,7 +547,7 @@
 
       <div class="skill reveal"><h3><svg class="g"><use href="#i-spark"/></svg>AI</h3><div class="chips">
         <span class="chip"><span class="ico"><img src="assets/icons/spring.svg" alt="" width="24" height="24"></span>Spring AI</span>
-        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-chip"/></svg></span>LLM integration</span>
+        <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-chip"/></svg></span>LLMs</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-search"/></svg></span>RAG</span>
         <span class="chip"><span class="ico gl"><svg class="g"><use href="#i-graph"/></svg></span>LangGraph</span>
       </div></div>
@@ -606,7 +612,7 @@
 
     /* typed role line */
     var el = document.getElementById('typed');
-    var words = ['Backend Engineer', 'Java · Spring Boot', 'Distributed Systems', 'Kafka · Kubernetes'];
+    var words = ['Backend Engineer', 'Java · Spring Boot', 'Distributed Systems', 'Event-Driven Architecture', 'Kafka · Redis · Kubernetes'];
     if (reduce) { el.textContent = words[0]; }
     else {
       var w = 0, i = 0, del = false;
