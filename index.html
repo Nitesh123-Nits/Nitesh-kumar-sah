@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitesh Kumar Sah · Backend Engineer (Java, Spring Boot, Distributed Systems)</title>
+<meta name="description" content="Backend engineer with 3+ years building Java and Spring Boot microservices, Kafka event-driven pipelines and Kubernetes platforms. SDE at Aditya Birla Capital, formerly Jio Platforms.">
+<meta name="author" content="Nitesh Kumar Sah">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nitesh Kumar Sah · Backend Engineer">
+<meta property="og:description" content="Java, Spring Boot, Kafka, Kubernetes. Distributed systems and event-driven architecture.">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nitesh Kumar Sah",
+  "jobTitle": "Software Development Engineer (Backend)",
+  "worksFor": { "@type": "Organization", "name": "Aditya Birla Capital" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "NIT Silchar" },
+  "knowsAbout": ["Java", "Spring Boot", "Microservices", "Apache Kafka", "Kubernetes", "Distributed Systems"],
+  "sameAs": [
+    "https://github.com/Nitesh123-Nits",
+    "https://linkedin.com/in/nitesh--kumar--sah",
+    "https://leetcode.com/u/Nitesh123-Nits/"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --surface: #ffffff;
+    --text: #111827;
+    --muted: #5b6472;
+    --line: #e4e4de;
+    --accent: #2563eb;
+    --accent-ink: #ffffff;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0c1117;
+    --surface: #131a22;
+    --text: #e6e9ee;
+    --muted: #98a1ae;
+    --line: #232c37;
+    --accent: #6aa3ff;
+    --accent-ink: #0c1117;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+  /* nav */
+  header.nav { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; }
+  .brand { font-weight: 700; letter-spacing: -0.01em; }
+  .brand span { color: var(--accent); }
+  .links { display: flex; gap: 22px; align-items: center; font-size: 14px; color: var(--muted); }
+  .links a:hover { color: var(--text); }
+  .toggle {
+    border: 1px solid var(--line); background: var(--surface); color: var(--text);
+    border-radius: 8px; padding: 6px 10px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .toggle:hover { border-color: var(--accent); }
+
+  /* sections */
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  .eyebrow { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--accent); margin: 0 0 10px; }
+  h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 14px; }
+  h2 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 28px; }
+  h3 { font-size: 17px; margin: 0; }
+  p { margin: 0 0 14px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 680px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted);
+    border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 999px; margin-bottom: 22px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #22a06b; }
+
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .btn { padding: 10px 18px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid var(--line); background: var(--surface); }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 44px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+  .stat { padding: 18px 20px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-size: 26px; letter-spacing: -0.02em; }
+  .stat span { font-size: 13px; color: var(--muted); }
+
+  /* experience */
+  .job { display: grid; grid-template-columns: 200px 1fr; gap: 28px; padding: 0 0 34px; }
+  .job:last-child { padding-bottom: 0; }
+  .job .when { color: var(--muted); font-size: 14px; }
+  .job h3 span { color: var(--accent); }
+  .job ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+  .job li { margin-bottom: 6px; }
+  .job li b { color: var(--text); font-weight: 600; }
+
+  /* projects */
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card { display: flex; flex-direction: column; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  a.card:hover { border-color: var(--accent); }
+  .card p { color: var(--muted); font-size: 15px; margin: 8px 0 14px; flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: "JetBrains Mono", monospace; font-size: 12px; padding: 3px 9px; border-radius: 6px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); }
+  .card .go { margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--accent); }
+  .card.flag { grid-column: 1 / -1; border-color: var(--accent); }
+  .badge { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--accent); margin-bottom: 6px; }
+
+  /* skills */
+  .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .skill { padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  .skill h3 { margin-bottom: 12px; font-size: 15px; color: var(--muted); font-weight: 600; }
+
+  .edu { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  .edu span { color: var(--muted); }
+
+  .contact { text-align: left; }
+  footer { padding: 30px 0 50px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  @media (max-width: 760px) {
+    .links a.hide-sm { display: none; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: 0; }
+    .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .job { grid-template-columns: 1fr; gap: 4px; }
+    .grid, .skills { grid-template-columns: 1fr; }
+    section { padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">nitesh<span>.</span>dev</a>
+    <nav class="links">
+      <a class="hide-sm" href="#experience">Experience</a>
+      <a class="hide-sm" href="#projects">Projects</a>
+      <a class="hide-sm" href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle" id="theme" type="button" aria-label="Toggle light and dark theme">Dark</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section id="hero">
+  <div class="wrap">
+    <div class="status"><span class="dot"></span> Open to SDE-2 / Senior Backend roles · Pan-India or remote</div>
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Nitesh Kumar Sah</h1>
+    <p class="lead">Backend engineer building resilient <b>Java and Spring Boot</b> microservices, <b>Kafka</b> event-driven pipelines and <b>Kubernetes</b> platforms. 3+ years of production experience in fintech and telecom-scale systems.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://linkedin.com/in/nitesh--kumar--sah" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn" href="https://github.com/Nitesh123-Nits" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://leetcode.com/u/Nitesh123-Nits/" target="_blank" rel="noopener">LeetCode</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3+</b><span>years in production backends</span></div>
+      <div class="stat"><b>1000s</b><span>of devices served by a Kafka job pipeline</span></div>
+      <div class="stat"><b>2×</b><span>peak throughput after containerising</span></div>
+      <div class="stat"><b>75%</b><span>faster CRUD paths after tuning</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow">/ experience</p>
+    <h2>Where I've worked</h2>
+
+    <div class="job">
+      <div class="when mono">Aug 2026 – Present<br>Navi Mumbai</div>
+      <div>
+        <h3>SDE · <span>Aditya Birla Capital</span></h3>
+        <ul>
+          <li>Re-architected <b>Fixed Deposit, DigiMetal (gold/silver) and SIP</b> API flows from sequential DB and third-party calls to <b>parallel async execution</b>, cutting latency.</li>
+          <li>Introduced <b>Redis caching</b> at critical layers to reduce DB round-trips and downstream load.</li>
+          <li>Refactored legacy code: broke up God classes, applied SOLID, moved to a clean layered architecture.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when mono">Oct 2023 – Aug 2026<br>Navi Mumbai</div>
+      <div>
+        <h3>SDE · <span>Jio Platforms</span></h3>
+        <ul>
+          <li>Built <b>Spring Boot microservices</b> for the provision / modify / delete lifecycle of enterprise VPN networking products.</li>
+          <li>Designed a <b>Kafka-based job dispatch pipeline</b> running across thousands of enterprise devices.</li>
+          <li>Built a config and automation engine generating device configs and IPs: <b>20% operational efficiency gain</b>.</li>
+          <li>Delivered a resilient provisioning service for real-time config and password updates with <b>retries and graceful failure handling</b>.</li>
+          <li>Secured services with <b>JWT + Spring Security</b>; tuned CRUD paths for a <b>75% performance improvement</b>.</li>
+          <li>Containerised services with <b>Docker + Kubernetes</b>, reaching <b>2× throughput at peak</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow">/ projects</p>
+    <h2>Selected work</h2>
+    <div class="grid">
+
+      <div class="card flag">
+        <div class="badge">FLAGSHIP · DISTRIBUTED SYSTEMS</div>
+        <h3>Distributed Device Configuration Backup Scheduler</h3>
+        <p>Triggers daily per-device config backups through <b>Kafka consumer groups</b>, with <b>Ansible</b> fetching versioned config snapshots. A <b>distributed lock</b> ensures only one scheduler instance publishes, so no duplicate jobs. Includes retries, failure alerting and a REST API for per-device status. A personal rebuild of a production problem I worked on, with full observability.</p>
+        <div class="tags"><span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Kafka</span><span class="tag">Ansible</span><span class="tag">Kubernetes</span><span class="tag">OpenTelemetry</span></div>
+      </div>
+
+      <a class="card" href="https://github.com/Nitesh123-Nits/Springboot-FullStcak-Ecommerce-Application" target="_blank" rel="noopener">
+        <h3>Full-Stack E-Commerce Platform</h3>
+        <p>Multi-role store with catalogue, cart, checkout and order management. JWT auth with user, seller and admin roles, Stripe payments, OpenAPI docs.</p>
+        <div class="tags"><span class="tag">Spring Boot 3</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Stripe</span></div>
+        <span class="go">View on GitHub →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Nitesh123-Nits/Enterprise-Knowledge-Orchestrator" target="_blank" rel="noopener">
+        <h3>Enterprise Knowledge Orchestrator</h3>
+        <p>Agentic AI platform: a LangGraph supervisor routes questions between a SQL agent and a FAISS-based RAG agent over policy documents.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">React</span></div>
+        <span class="go">View on GitHub →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Nitesh123-Nits/chat-service" target="_blank" rel="noopener">
+        <h3>Real-Time Chat Service</h3>
+        <p>One-to-one messaging over REST and STOMP WebSockets, with stable cursor-based pagination and per-conversation authorisation.</p>
+        <div class="tags"><span class="tag">Spring Boot</span><span class="tag">WebSocket</span><span class="tag">JPA</span></div>
+        <span class="go">View on GitHub →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Nitesh123-Nits/spring-ai-projects" target="_blank" rel="noopener">
+        <h3>Spring AI Projects</h3>
+        <p>Chat, image generation, recipe generator and audio transcription built on Spring AI and OpenAI, with React front-ends.</p>
+        <div class="tags"><span class="tag">Spring AI</span><span class="tag">OpenAI</span><span class="tag">React</span></div>
+        <span class="go">View on GitHub →</span>
+      </a>
+
+      <a class="card" href="https://nitesh123-nits.github.io/faang-roadmap/" target="_blank" rel="noopener">
+        <h3>FAANG Roadmap Tracker</h3>
+        <p>Installable PWA for tracking interview preparation, with light/dark mode and a customisable roadmap. Live on GitHub Pages.</p>
+        <div class="tags"><span class="tag">PWA</span><span class="tag">JavaScript</span></div>
+        <span class="go">Open live app →</span>
+      </a>
+
+      <a class="card" href="https://github.com/Nitesh123-Nits/Java-Field-Manual-Backend" target="_blank" rel="noopener">
+        <h3>Java Backend Field Manual</h3>
+        <p>Study site covering Java concurrency, Spring Boot, microservices, distributed systems, Kafka and Redis.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">Kafka</span><span class="tag">Redis</span></div>
+        <span class="go">View on GitHub →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">/ skills</p>
+    <h2>What I work with</h2>
+    <div class="skills">
+      <div class="skill"><h3>Backend</h3><div class="tags"><span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Spring Cloud</span><span class="tag">Spring Security + JWT</span><span class="tag">Spring Scheduler</span><span class="tag">REST</span></div></div>
+      <div class="skill"><h3>Architecture</h3><div class="tags"><span class="tag">Microservices</span><span class="tag">Event-driven</span><span class="tag">Async / parallel execution</span><span class="tag">Distributed locking</span><span class="tag">Retries &amp; resilience</span><span class="tag">SOLID</span></div></div>
+      <div class="skill"><h3>Messaging &amp; Data</h3><div class="tags"><span class="tag">Kafka</span><span class="tag">RabbitMQ</span><span class="tag">Redis</span><span class="tag">MySQL</span><span class="tag">MongoDB</span></div></div>
+      <div class="skill"><h3>Platform &amp; Cloud</h3><div class="tags"><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Helm</span><span class="tag">Ansible</span><span class="tag">AWS (EC2, S3, RDS, IAM)</span><span class="tag">GitHub Actions</span></div></div>
+      <div class="skill"><h3>Observability</h3><div class="tags"><span class="tag">OpenTelemetry</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Loki</span><span class="tag">Tempo</span></div></div>
+      <div class="skill"><h3>AI</h3><div class="tags"><span class="tag">Spring AI</span><span class="tag">LLM integration</span><span class="tag">RAG</span><span class="tag">LangGraph</span></div></div>
+    </div>
+
+    <h2 style="margin-top:44px">Education</h2>
+    <div class="edu">
+      <div><h3>B.Tech, Electronics &amp; Communication Engineering</h3><span>National Institute of Technology, Silchar</span></div>
+      <div class="mono"><span>2019 – 2023 · CGPA 8.36</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <p class="eyebrow">/ contact</p>
+    <h2>Let's talk</h2>
+    <p class="lead">I'm looking for SDE-2 / Senior Backend Engineer roles working on Java, Spring Boot and distributed systems. The fastest way to reach me is LinkedIn.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://linkedin.com/in/nitesh--kumar--sah" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      <a class="btn" href="https://github.com/Nitesh123-Nits" target="_blank" rel="noopener">See my code</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Nitesh Kumar Sah</span>
+    <span class="mono">Java · Spring Boot · Kafka · Kubernetes</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme');
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    function apply(t) {
+      root.setAttribute('data-theme', t);
+      btn.textContent = t === 'dark' ? 'Light' : 'Dark';
+    }
+    apply(saved || (prefersDark ? 'dark' : 'light'));
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
