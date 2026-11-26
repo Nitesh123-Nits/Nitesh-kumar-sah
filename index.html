@@ -544,11 +544,11 @@
         </div>
         <ul>
           <li>Contributed to migrating the <b>Fixed Deposit</b> module out of a shared securities service (which held both Mutual Fund and FD code) into a <b>standalone service</b>; tested it end to end and onboarded its APIs so everything kept running smoothly.</li>
-          <li>Re-architected <b>3 investment product API flows</b> (Fixed Deposit, DigiMetal gold/silver, SIP) from sequential DB and third-party calls to <b>parallel asynchronous execution</b>, cutting end-to-end latency.</li>
-          <li>Introduced <b>Redis caching</b> at critical layers to reduce database round-trips and downstream load.</li>
+          <li>Re-architected <b>3 investment product API flows</b> (Fixed Deposit, DigiMetal gold/silver, SIP) from sequential DB and third-party calls to <b>parallel asynchronous execution</b>, cutting end-to-end API latency by up to <b>~80%</b>.</li>
+          <li>Introduced <b>Redis caching</b> at critical layers to reduce database round-trips and downstream load, improving response times by <b>~50%</b>.</li>
           <li>Built APIs for business-driven <b>cohort-based banners</b> and <b>referral updates</b>.</li>
           <li>Developed multiple <b>scheduler APIs</b> for lead management workflows.</li>
-          <li>Refactored legacy modules: broke up God classes, applied <b>SOLID</b> principles and a clean layered architecture.</li>
+          <li>Refactored legacy modules: broke up God classes, applied <b>SOLID</b> principles and a clean layered architecture, cutting the time to read, review and change these modules by <b>~20%</b>.</li>
         </ul>
       </div>
 
